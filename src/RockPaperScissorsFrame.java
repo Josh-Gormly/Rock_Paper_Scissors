@@ -69,9 +69,10 @@ public class RockPaperScissorsFrame extends JFrame
 
         titlePnl.add(titleLbl);
     }
-
-    // creates a stats panel that show the amount of win for the computer and regular player
-    // also shows ties
+    /**
+    * creates a stats panel that show the amount of win for the computer and regular player
+    * also shows ties
+     */
     private void createStatsPnl()
     {
         statsPnl = new JPanel();
@@ -97,10 +98,11 @@ public class RockPaperScissorsFrame extends JFrame
         winnerPnl.add(scroller);
 
     }
-
-    // Creates a panel that shows 4 buttons
-    // Adds a border to the created panel
-    // Each move is eventually going to be assigned to an integer
+    /**
+    * Creates a panel that shows 4 buttons
+    * Adds a border to the created panel
+    * Each move is eventually going to be assigned to an integer
+     */
     private void createDecidePnl()
     {
         decidePnl = new JPanel();
@@ -138,10 +140,12 @@ public class RockPaperScissorsFrame extends JFrame
         });
         quitBtn.addActionListener((ActionEvent ae) -> System.exit(0));
     }
-    // updates the result panel to show the move that you choose and how it relates to what the computer chose
-    // prints out who won each round
-    // uses an if statement to decide the combination of winning
-    // Rock = 0, Paper = 1, Scissors = 2
+    /**
+    * updates the result panel to show the move that you choose and how it relates to what the computer chose
+    * prints out who won each round
+    * uses an if statement to decide the combination of winning
+    * Rock = 0, Paper = 1, Scissors = 2
+     */
     private void play(int playerMove)
     {
         int computerMove = rnd.nextInt(3);
